@@ -6,5 +6,4 @@ function [y] = quadratura_simpson_composita(f, a, b, N)
         y(i) = f(t(i))+f(t(i+1))+4*f( (t(i)+t(i+1))/2 );
     end
     y = sum(y)*delta; 
-    %calcolo dell'area come sommatoria(f((x[k]+x[k+1])/2)) * (b-a)/N)
 end
