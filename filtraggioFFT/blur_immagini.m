@@ -1,12 +1,12 @@
 [file, path] = uigetfile("*.jpg");
 x = rgb2gray(imread(strcat(path,file)));
 
-[M N] = size(x);
+[M, N] = size(x);
 du = 1/M; dv = 1/N;
 m = -1/2:du:1/2-du;
 n = -1/2:dv:1/2-dv;
 [l,k] = meshgrid(n,m);
-R = 0.1; %raggio filtro circolare
+R = 0.05; %raggio filtro circolare
 
 filter = sqrt(l.^2+k.^2) <= R;
 X = fft2(x);

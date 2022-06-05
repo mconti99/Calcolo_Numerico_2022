@@ -6,7 +6,7 @@ du = 1/M; dv = 1/N;
 m = -1/2:du:1/2-du;
 n = -1/2:dv:1/2-dv;
 [l,k] = meshgrid(n,m);
-R = 0.01; %raggio filtro circolare
+R = 0.02; %raggio filtro circolare
 
 filter = sqrt(l.^2+k.^2) >= R;
 X = fft2(x);
