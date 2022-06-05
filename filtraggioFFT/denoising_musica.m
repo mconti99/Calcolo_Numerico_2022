@@ -13,7 +13,7 @@ y_n = noise + y;
 N = size(y);
 N = N(1,1);
 
-f =([0:N-1]./N - 1./2)*fs./2;
+f =([0:N-1]./N - 1./2)*fs;
 
 Y = fftshift(fft(y));
 Y_N = fftshift(fft(y_n));

@@ -22,7 +22,7 @@ plot(N,err2);
 hold on;
 plot(N,err3);
 
-legend('q. Trapezoidale','q. Rienman', 'q. Simpson');
+legend('q. Trapezoidale','q. Riemann', 'q. Simpson');
 title('Errore relativo al crescere del numero di intervalli N');
 xlabel('N');
 ylabel('Errore relativo');
