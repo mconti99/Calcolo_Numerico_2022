@@ -22,6 +22,5 @@ for k = 1:m                                       %ciclo sul numero di passi
 end
 %Reverse
 y = digitrevorder(x,2);%richiesto dall'algoritmo
-%y=x;
 error = abs(y - F_mat);                            %Errore rispetto all'algritmo di matlab
 end
